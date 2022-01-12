@@ -10,8 +10,128 @@ html {
   box-sizing: inherit;
 }
 
+/* Start of JS specific Classes */
+
+.visibility-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.move-right {
+  transform: translateX(100%);
+}
+
+.move-left {
+  transform: translateX(-100%);
+}
+/* End of JS specific Classes */
+
+/* Start of CSS Variables */
+:root {
+  --nav-bg: hsla(189, 31%, 42%, 0.99);
+  --link-color: hsl(7, 48%, 73%);
+  --side-color-light: hsl(0, 0%, 100%);
+  --side-color-dark: hsl(0, 0%, 100%);
+}
+/* End of CSS Variables */
+
+/* Start of Fontfaces */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Light.ttf') format('ttf'), url('../fonts/Ubuntu-LightItalic.ttf') format('ttf'), url('../fonts/Ubuntu-Medium.ttf') format('ttf'),
+    url('../fonts/Ubuntu-MediumItalic.ttf') format('ttf'), url('../fonts/Ubuntu-Regular.ttf') format('ttf'), url('../fonts/Ubuntu-Italic.ttf') format('ttf'),
+    url('../fonts/Ubuntu-Bold.ttf') format('ttf'), url('../fonts/Ubuntu-BoldItalic.ttf') format('ttf');
+}
+/* End of Fontfaces */
+
 body {
   background-color: #e0e0e0;
   color: #363636;
   font-size: 16px;
+  width: 100%;
+  font-family: 'Ubuntu';
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  height: 180px;
+  width: 100%;
+  position: fixed;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  /* border-bottom: 1px solid black; */
+  background-color: var(--nav-bg);
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 140px;
+  align-self: center;
+  margin-top: 25px;
+}
+
+ul {
+  display: flex;
+}
+
+ul div {
+  align-self: center;
+  width: 90px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+ul li {
+  padding: 4px 10px;
+  align-self: center;
+  color: var(--link-color);
+  font-size: 18px;
+  user-select: none;
+}
+
+hr {
+  width: 45px;
+  height: 1px;
+  position: absolute;
+  align-self: center;
+  margin-top: 50px;
+  margin-left: 32.5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.services-hr {
+  margin-left: 144.5px;
+}
+
+.location-hr {
+  margin-left: 252.5px;
+}
+
+ul li:hover {
+  cursor: pointer;
+  --link-color: hsl(7, 48%, 90%);
+}
+
+.hero-image {
+  height: calc(100vh);
+  background-image: url(../images/country-ga8c6b5675_1920.jpg);
+}
+
+.light-sides {
+  background-color: var(--side-color-light);
+}
+
+.dark-sides {
+  background-color: var(--side-color-dark);
 }
