@@ -28,10 +28,23 @@ html {
 
 /* Start of CSS Variables */
 :root {
-  --nav-bg: hsla(189, 31%, 42%, 0.99);
-  --link-color: hsl(7, 48%, 73%);
+  --nav-bg: hsla(118, 69%, 46%, 0.99);
+  --link-color: hsl(7, 64%, 35%);
   --side-color-light: hsl(0, 0%, 100%);
-  --side-color-dark: hsl(0, 0%, 100%);
+  --side-color-dark: hsl(0, 0%, 20%);
+  --contact-btn-color: hsla(0, 0%, 0%, 0.74);
+  --contact-btn-shadow: 0px;
+  --highlight-color: hsl(7, 100%, 68%);
+}
+
+.light-sides {
+  background-color: var(--side-color-light);
+  color: black;
+}
+
+.dark-sides {
+  background-color: var(--side-color-dark);
+  color: white;
 }
 /* End of CSS Variables */
 
@@ -44,8 +57,9 @@ html {
 }
 /* End of Fontfaces */
 
+/* start of General CSS */
 body {
-  background-color: #e0e0e0;
+  background-color: var(--side-color-light);
   color: #363636;
   font-size: 16px;
   width: 100%;
@@ -56,13 +70,15 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+/* End of General CSS */
 
+/* Start of Navbar */
 .nav-container {
-  height: 180px;
+  top: 0;
+  height: 90px;
   width: 100%;
   position: fixed;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  /* border-bottom: 1px solid black; */
   background-color: var(--nav-bg);
 }
 
@@ -74,9 +90,9 @@ nav {
 }
 
 .logo {
-  height: 140px;
+  height: 100px;
   align-self: center;
-  margin-top: 25px;
+  margin-top: 0px;
 }
 
 ul {
@@ -98,6 +114,7 @@ ul li {
   color: var(--link-color);
   font-size: 18px;
   user-select: none;
+  transition: 0.2s all ease-in-out;
 }
 
 hr {
@@ -108,14 +125,7 @@ hr {
   margin-top: 50px;
   margin-left: 32.5px;
   transition: all 0.5s ease-in-out;
-}
-
-.services-hr {
-  margin-left: 144.5px;
-}
-
-.location-hr {
-  margin-left: 252.5px;
+  border-color: #785e5c;
 }
 
 ul li:hover {
@@ -123,15 +133,114 @@ ul li:hover {
   --link-color: hsl(7, 48%, 90%);
 }
 
+.pseudo-nav {
+  height: 99px;
+  position: relative;
+  opacity: 0;
+}
+/* End of Navbar */
+
+/* Start of Hero Image Area */
 .hero-image {
-  height: calc(100vh);
+  height: calc(80vh);
+  max-width: 90%;
+  margin: 0 auto;
   background-image: url(../images/country-ga8c6b5675_1920.jpg);
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
 }
 
-.light-sides {
-  background-color: var(--side-color-light);
+h1 {
+  color: white;
+  display: block;
+  padding: 20px 0px;
+  text-indent: 10px;
+  font-size: 24px;
 }
 
-.dark-sides {
-  background-color: var(--side-color-dark);
+.hero-inner {
+  padding: 35vh 10px 0 10px;
 }
+
+.contact-btn {
+  padding: 12px 0px;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: 0.5s all ease-in-out;
+  box-shadow: var(--contact-btn-shadow) 0 0 0 var(--contact-btn-color);
+  width: 140px;
+  display: inline-block;
+  background-color: hsl(0, 0%, 80%);
+  font-size: 18px;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+  transform: translateX(6%);
+  --contact-btn-shadow: -2px;
+  background-color: rgba(255, 255, 255, 0.986);
+}
+
+.hero-inner p {
+  display: inline-block;
+  margin: 0px 33px;
+  color: hsl(0, 0%, 75%);
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.hero-inner p:hover {
+  cursor: pointer;
+  color: var(--highlight-color);
+}
+/* End of Hero Image Area */
+
+/* Start of Section Content */
+
+section {
+  display: block;
+  position: relative;
+  padding: 20px 0px 8px 0px;
+}
+
+section p {
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.company-name {
+  position: absolute;
+  margin-top: -55px;
+  background-color: white;
+  width: 40%;
+  height: 55px;
+  margin-bottom: 20px;
+  padding-left: 12px;
+}
+
+.company-intro {
+  padding-top: 20px;
+  width: 50%;
+  padding-bottom: 70px;
+}
+
+h3 {
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  width: fit-content;
+  transition: 0.2s all ease-in-out;
+}
+
+h2:hover {
+  cursor: pointer;
+  color: var(--highlight-color);
+}
+
+/* End of Section Contect */

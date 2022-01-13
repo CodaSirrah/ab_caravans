@@ -6,9 +6,8 @@ const locationLink = document.querySelector('#location')
 //navHrSelectors
 const linkHr = document.querySelector('.link-hr')
 
-// captureSelectors
-const arrow = document.querySelector('.arrow')
-const call = document.querySelector('.call')
+// callUsSelectors
+const callUs = document.querySelector('.call-us')
 
 // globalObjects {
 const linkDistance = 110
