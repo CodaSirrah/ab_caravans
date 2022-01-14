@@ -1,16 +1,12 @@
 // navSelectors
-const homeLink = document.querySelector('.home-li')
-const servicesLink = document.querySelector('.services-li')
-const locationLink = document.querySelector('.location-li')
+// const homeLink = document.querySelector('.home-li')
+// const servicesLink = document.querySelector('.services-li')
+// const locationLink = document.querySelector('.location-li')
 
-//navHrSelectors
-const linkHr = document.querySelector('.link-hr')
+// //navHrSelectors
 
-// callUsSelectors
-const callUs = document.querySelector('.call-us')
-
-// globalObjects {
-const linkDistance = 110
+// // callUsSelectors
+// const callUs = document.querySelector('.call-us')
 
 // function animateNav(e) {
 //   if (e.target.classList.contains('navLink') === false) {
@@ -57,13 +53,5 @@ const linkDistance = 110
 //     }
 //   }
 // }
-
-function translateHr(target, multiplier) {
-  target.style = `transform: translateX(${(linkDistance * multiplier).toString()}px);`
-}
-
-function resetHr(target) {
-  target.style = `transform: translateX(0px);`
-}
 
 // document.addEventListener('click', animateNav)

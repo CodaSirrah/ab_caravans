@@ -36,6 +36,7 @@ html {
   --contact-btn-color: hsla(0, 0%, 0%, 0.74);
   --contact-btn-shadow: 0px;
   --highlight-color: hsl(7, 100%, 63%);
+  --footer-bg: hsla(0, 0%, 100%, 0.8);
 }
 
 .light-sides {
@@ -91,8 +92,14 @@ nav {
   justify-content: space-between;
 }
 
+.logo-container {
+  position: relative;
+}
+
 .logo {
-  height: 100px;
+  padding-top: 10 px;
+  position: absolute;
+  height: 105px;
   align-self: center;
   margin-top: 0px;
 }
@@ -107,11 +114,10 @@ ul div {
   margin: 0px 10px;
   display: flex;
   justify-content: center;
-
-    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-ul a {
+nav ul a {
   align-self: center;
   color: var(--link-color);
   font-size: 18px;
@@ -135,7 +141,7 @@ hr {
   border-color: #785e5c;
 }
 
-ul li:hover {
+nav ul li:hover {
   cursor: pointer;
   --link-color: hsl(7, 48%, 90%);
 }
@@ -200,7 +206,7 @@ h1 {
   color: hsl(0, 0%, 75%);
   font-size: 18px;
   font-weight: 500;
-  transition: 0.2s;
+  transition: 0.2s all linear;
 }
 
 .hero-inner p a:hover {
@@ -230,6 +236,10 @@ h1 {
 
 #services {
   scroll-margin-top: 120px;
+}
+
+#location {
+  scroll-margin-top: 220px;
 }
 
 h3 {
@@ -277,43 +287,167 @@ h4 {
 /* End of Section Contect */
 
 /* Start of Map Section */
+
+.address {
+  max-width: 600px;
+  margin: 18px 0px 8px 0px;
+  padding: 2px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .map-header {
-  margin: 10px 0px;
   font-size: 20px;
-  padding: 10px 0px;
+}
+
+.address-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-size: 12px;
 }
 
 .map-container {
   display: flex;
   justify-content: flex-start;
   height: 400px;
+  margin-bottom: 20px;
 }
 
 #map {
   height: 100%;
   width: 600px;
 }
+
 /* End of Map Section */
 
 /* Start of Form Section */
+
 #form-container {
-  display: flex;
-  justify-content: center;
+  height: fit-content;
+  padding: 20px 0px;
 }
 
 form {
-  border: 1px solid white;
-  height: 300px;
-  width: 600px;
-  display: grid;
-  text-align: center;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+form label {
+  padding: 10px 3px;
+  align-self: flex-start;
+  font-size: 16px;
+}
+
+input {
+  align-self: flex-start;
+  width: 500px;
+  height: 20px;
+  padding: 18px 0px;
+  border: 2px solid rgb(168, 158, 158);
+  border-radius: 6px;
+}
+
+#submit {
+  margin-top: 20px;
+  width: 80px;
+  height: 30px;
+  padding: 0px;
+  border: 1px solid black;
+  border-radius: 4px;
+  align-self: flex-start;
+  transition: 0.3s all linear;
+  color: hsl(0, 0%, 60%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#submit:hover {
+  cursor: pointer;
+  color: var(--highlight-color);
+}
+
+.form-message-container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.form-message-container h3 {
+  display: block;
+  font-size: 26px;
+  color: white;
+  padding: 0px 0px 10px 0px;
+}
+
+.form-message-container p {
+  padding: 10px 100px;
+  font-size: 16px;
+}
+
+.plane-icon {
+  height: 80px;
+  padding: 10px 0px 16px 0px;
+}
+
 /* End of Form Section */
 
+/* Start of Footer Section */
+footer {
+  width: 100%;
+  height: 160px;
+  background-color: var(--footer-bg);
+  position: relative;
+  padding: 0px;
+}
+
+footer .grid-container {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h5 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  display: block;
+}
+
+footer li {
+  font-size: 12px;
+  padding: 2px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  color: var(--highlight-color);
+}
+/* End of Footer Section */
+
 /* Start of Media Queries */
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 610px) {
   h1 {
     text-indent: 0px;
+  }
+
+  .address {
+    padding: 2px 4px;
+  }
+
+  footer .grid-container {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
   }
 }
 
@@ -331,6 +465,14 @@ form {
   }
   .hero-inner p {
     margin: 0px 23px;
+  }
+
+  footer .grid-left {
+    margin: 5px 0px;
+  }
+
+  footer .grid-right {
+    margin: 5px 0px;
   }
 }
 /* End of Media Queries */
