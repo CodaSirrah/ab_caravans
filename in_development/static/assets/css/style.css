@@ -530,9 +530,6 @@ footer a:hover {
     grid-column: span 2;
   }
 
-  .address {
-  }
-
   .form-grid-container {
     display: unset;
   }

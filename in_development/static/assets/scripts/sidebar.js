@@ -34,6 +34,6 @@ const hamburgerModule = (() => {
   }
   menuContainer.addEventListener('click', animateMenu)
   sidebarLinks.forEach((link) => {
-    link.addEventListener('click', animateMenu)
+    link.addEventListener('click', animateMenu, { passive: true })
   })
 })()
