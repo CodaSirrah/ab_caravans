@@ -81,7 +81,7 @@ body {
 
 /* Start of Mobile Menu */
 #hamburger-menu {
-  display: hidden;
+  display: none;
   width: 32px;
   height: 32px;
 }
@@ -348,7 +348,7 @@ h4 {
   padding: 2px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .map-header {
   font-size: 20px;
@@ -531,7 +531,6 @@ footer a:hover {
   }
 
   .address {
-    padding: 2px 4px;
   }
 
   .form-grid-container {
@@ -556,6 +555,15 @@ footer a:hover {
 
   #hamburger-menu {
     display: block;
+    align-self: center;
+  }
+
+  footer .grid-left {
+    margin: 5px 0px;
+  }
+
+  footer .grid-right {
+    margin: 5px 0px;
   }
 }
 
@@ -566,14 +574,6 @@ footer a:hover {
 
   .hero-inner p {
     margin: 0px 23px;
-  }
-
-  footer .grid-left {
-    margin: 5px 0px;
-  }
-
-  footer .grid-right {
-    margin: 5px 0px;
   }
 
   input {
