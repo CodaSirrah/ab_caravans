@@ -24,6 +24,11 @@ html {
   opacity: 0.6;
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 /* End of JS specific Classes */
 
 /* Start of CSS Variables */
@@ -74,6 +79,55 @@ body {
 }
 /* End of General CSS */
 
+/* Start of Mobile Menu */
+#hamburger-menu {
+  display: hidden;
+  width: 32px;
+  height: 32px;
+}
+
+.mobile-menu {
+  z-index: 10;
+  width: 400px;
+  height: 78vh;
+  position: fixed;
+  top: calc(12vh);
+  transform: translateX(-100%);
+  left: 0%;
+  background-color: #fcfcfc;
+  -moz-box-shadow: -3px 0 5px 0 #555;
+  -webkit-box-shadow: -3px 0 5px 0 #555;
+  box-shadow: -3px 0 5px 0 #555;
+  transition: all 0.6s;
+  border-radius: 2px;
+  padding: 10px 0px;
+}
+
+.mobile-menu.open {
+  transform: translateX(0%);
+}
+
+.mobile-menu li {
+  padding: 10px 10px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.mobile-menu a {
+  margin-left: 5px;
+}
+
+.mobile-menu hr {
+  width: 95%;
+  background-color: #2d2d2d2f;
+  border: none;
+  height: 1px;
+  margin: 10px 10px 20px 10px;
+  float: left;
+}
+/* End of Mobile Menu */
+
 /* Start of Navbar */
 .nav-container {
   top: 0;
@@ -104,11 +158,11 @@ nav {
   margin-top: 0px;
 }
 
-ul {
+nav ul {
   display: flex;
 }
 
-ul div {
+nav ul div {
   align-self: center;
   width: 90px;
   margin: 0px 10px;
@@ -130,7 +184,7 @@ ul li {
   padding: 4px 0px;
 }
 
-hr {
+nav hr {
   width: 45px;
   height: 1px;
   position: absolute;
@@ -294,7 +348,7 @@ h4 {
   padding: 2px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .map-header {
   font-size: 20px;
@@ -490,6 +544,18 @@ footer a:hover {
 
   .form-message-container h3 {
     padding: 20px 0px 0px 0px;
+  }
+
+  input {
+    width: 97%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: block;
   }
 }
 
