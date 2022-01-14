@@ -258,7 +258,7 @@ h2 {
 section {
   display: block;
   position: relative;
-  padding: 20px 0px 8px 0px;
+  padding: 20px 20px 8px 20px;
 }
 
 section p {
@@ -298,6 +298,7 @@ h4 {
 }
 .map-header {
   font-size: 20px;
+  padding: 0px 20px;
 }
 
 .address-grid {
@@ -325,6 +326,11 @@ h4 {
 #form-container {
   height: fit-content;
   padding: 20px 0px;
+}
+
+.form-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 form {
@@ -435,25 +441,31 @@ footer a:hover {
 /* End of Footer Section */
 
 /* Start of Media Queries */
+@media screen and (max-width: 900px) {
+  form {
+    padding: 0px 10px;
+  }
+
+  .form-message-container p {
+    padding: 10px 20px;
+  }
+
+  .form-message-container h3 {
+    font-size: 22px;
+  }
+
+  .plane-icon {
+    height: 70px;
+  }
+
+  input {
+    width: 380px;
+  }
+}
 
 @media screen and (max-width: 610px) {
   h1 {
     text-indent: 0px;
-  }
-
-  .address {
-    padding: 2px 4px;
-  }
-
-  footer .grid-container {
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .company-name {
-    width: 300px;
   }
 
   .grid-left {
@@ -463,6 +475,29 @@ footer a:hover {
   .grid-right {
     grid-column: span 2;
   }
+
+  .address {
+    padding: 2px 4px;
+  }
+
+  .form-grid-container {
+    display: unset;
+  }
+
+  .form-message-container {
+    height: 240px;
+  }
+
+  .form-message-container h3 {
+    padding: 20px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .company-name {
+    width: 300px;
+  }
+
   .hero-inner p {
     margin: 0px 23px;
   }
@@ -473,6 +508,10 @@ footer a:hover {
 
   footer .grid-right {
     margin: 5px 0px;
+  }
+
+  input {
+    width: 95%;
   }
 }
 /* End of Media Queries */
