@@ -33,11 +33,11 @@ html {
 
 /* Start of CSS Variables */
 :root {
-  --nav-bg: hsl(118, 49%, 46%);
+  --nav-bg: hsl(0, 0%, 19%);
   --nav-bg-fade: hsla(118, 49%, 46% 0.6);
-  --link-color: hsl(0, 0%, 0%);
-  --side-color-light: hsl(0, 0%, 100%);
-  --side-color-dark: hsl(0, 0%, 20%);
+  --link-color: hsl(0, 0%, 100%);
+  --side-color-white: hsl(0, 0%, 100%);
+  --side-color-color: hsl(209, 34%, 45%);
   --contact-btn-color: hsla(0, 0%, 0%, 0.74);
   --contact-btn-shadow: 0px;
   --highlight-color: hsl(7, 100%, 63%);
@@ -45,12 +45,12 @@ html {
 }
 
 .light-sides {
-  background-color: var(--side-color-light);
+  background-color: var(--side-color-white);
   color: black;
 }
 
 .dark-sides {
-  background-color: var(--side-color-dark);
+  background-color: var(--side-color-color);
   color: white;
 }
 /* End of CSS Variables */
@@ -66,7 +66,7 @@ html {
 
 /* start of General CSS */
 body {
-  background-color: var(--side-color-light);
+  background-color: var(--side-color-white);
   color: #363636;
   font-size: 16px;
   width: 100%;
@@ -151,6 +151,7 @@ nav {
 }
 
 .logo {
+  display: none;
   padding-top: 10 px;
   position: absolute;
   height: 105px;
@@ -168,7 +169,6 @@ nav ul div {
   margin: 0px 10px;
   display: flex;
   justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 nav ul a {
@@ -192,7 +192,8 @@ nav hr {
   margin-top: 50px;
   margin-left: 32.5px;
   transition: all 0.4s linear;
-  border-color: #785e5c;
+  border: none;
+  background-color: var(--side-color-color);
 }
 
 nav ul li:hover {
@@ -217,6 +218,12 @@ nav ul li:hover {
   border-left: 2px solid black;
   border-bottom: 2px solid black;
   border-top: 1px solid black;
+}
+
+.hero-image > div {
+  height: 100%;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.3);
 }
 
 h1 {
@@ -299,7 +306,7 @@ h1 {
 h3 {
   margin-top: 16px;
   font-size: 20px;
-  color: var(--highlight-color);
+  color: var(--side-color-color);
 }
 
 h2 {
