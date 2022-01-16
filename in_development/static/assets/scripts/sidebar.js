@@ -8,14 +8,14 @@ const hamburgerModule = (() => {
   const animation = bodymovin.loadAnimation({
     // animationData: { /* ... */ },
     container: document.querySelector('#hamburger-menu'), // required
-    path: 'in_development/static/assets/animations/hamburger.json', // required
+    path: '../static/assets/animations/hamburger.json', // required
     renderer: 'svg', // required
     loop: false, // optional
     autoplay: false, // optional
     name: 'hamburger-animation', // optional
   })
   animation.goToAndStop(0, true)
-  animation.setSpeed(2.6)
+  animation.setSpeed(2.7)
 
   const toggleMobileMenu = () => {
     sidebar.classList.toggle('open')
