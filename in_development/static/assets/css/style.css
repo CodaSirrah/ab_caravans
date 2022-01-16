@@ -230,6 +230,10 @@ nav ul a:hover {
   border-left: 2px solid black;
   border-bottom: 2px solid black;
   border-top: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* /* background-position: center;  */
+  background-attachment: fixed;
 }
 
 .hero-image > div {
