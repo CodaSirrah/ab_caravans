@@ -15,7 +15,7 @@ const hamburgerModule = (() => {
     name: 'hamburger-animation', // optional
   })
   animation.goToAndStop(0, true)
-  animation.setSpeed(2.5)
+  animation.setSpeed(2.6)
 
   const toggleMobileMenu = () => {
     sidebar.classList.toggle('open')
