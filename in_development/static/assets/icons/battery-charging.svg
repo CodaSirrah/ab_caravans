@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 512 512"
+   style="enable-background:new 0 0 512 512;"
+   xml:space="preserve"
+   sodipodi:docname="battery-charging.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"><metadata
+   id="metadata71"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs69" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="3368"
+   inkscape:window-height="1376"
+   id="namedview67"
+   showgrid="false"
+   inkscape:zoom="0.66368746"
+   inkscape:cx="-292.4982"
+   inkscape:cy="148.16458"
+   inkscape:window-x="72"
+   inkscape:window-y="27"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Capa_1" />
+<path
+   style="fill:#c9c6ca"
+   d="m 365.714,300.51 h 81.27 c 4.488,0 8.127,3.639 8.127,8.127 v 65.016 h -89.397 z"
+   id="path2"
+   inkscape:connector-curvature="0" />
+<path
+   style="fill:#9c969e"
+   d="m 503.873,349.272 c -4.492,0 -8.127,3.635 -8.127,8.127 v 8.127 H 365.714 v 16.254 h 130.032 c 8.96,0 16.254,-7.294 16.254,-16.254 v -8.127 c 0,-4.492 -3.635,-8.127 -8.127,-8.127 z"
+   id="path4"
+   inkscape:connector-curvature="0" />
+<path
+   style="fill:#dbd9dc"
+   d="M 357.587,381.78 H 65.016 C 29.109,381.78 0,352.671 0,316.764 V 170.478 c 0,-35.907 29.109,-65.016 65.016,-65.016 h 292.571 c 35.907,0 65.016,29.109 65.016,65.016 v 146.286 c 0,35.907 -29.108,65.016 -65.016,65.016 z"
+   id="path6"
+   inkscape:connector-curvature="0" />
+<path
+   style="fill:#c9c6ca"
+   d="M 365.714,365.526 V 194.859 c 0,-22.442 -18.193,-40.635 -40.635,-40.635 -22.442,0 -40.635,18.193 -40.635,40.635 v 170.667 h -16.976 c -3.001,0 -5.641,-1.721 -7.156,-4.312 -9.852,-16.853 -28.074,-28.195 -49.011,-28.195 -20.937,0 -39.159,11.342 -49.011,28.195 -1.514,2.591 -4.154,4.312 -7.156,4.312 H 65.016 c -26.931,0 -48.762,-21.831 -48.762,-48.762 V 127.574 C 6.167,139.028 0,154.016 0,170.478 v 146.286 c 0,35.907 29.109,65.016 65.016,65.016 h 292.571 c 16.462,0 31.45,-6.167 42.905,-16.254 z"
+   id="path8"
+   inkscape:connector-curvature="0" />
+<g
+   id="g14"
+   transform="translate(0,12)">
+	<path
+   style="fill:#9c969e"
+   d="m 357.587,247.875 h -65.016 c -4.488,0 -8.127,-3.639 -8.127,-8.127 v -48.762 c 0,-4.488 3.639,-8.127 8.127,-8.127 h 65.016 c 4.488,0 8.127,3.639 8.127,8.127 v 48.762 c 0,4.488 -3.638,8.127 -8.127,8.127 z"
+   id="path10"
+   inkscape:connector-curvature="0" />
+	<path
+   style="fill:#9c969e"
+   d="M 203.175,264.129 H 73.143 c -13.444,0 -24.381,-10.937 -24.381,-24.381 v -48.762 c 0,-13.444 10.937,-24.381 24.381,-24.381 h 130.032 c 13.444,0 24.381,10.937 24.381,24.381 v 48.762 c 0,13.444 -10.937,24.381 -24.381,24.381 z"
+   id="path12"
+   inkscape:connector-curvature="0" />
+</g>
+<path
+   style="fill:#ffffff"
+   d="m 73.143,194.859 c -4.484,0 -8.127,3.643 -8.127,8.127 v 48.762 c 0,4.484 3.643,8.127 8.127,8.127 h 130.032 c 4.484,0 8.127,-3.643 8.127,-8.127 v -48.762 c 0,-4.484 -3.643,-8.127 -8.127,-8.127 z"
+   id="path16"
+   inkscape:connector-curvature="0" />
+<path
+   style="fill:#edebed"
+   d="M 400.492,121.716 C 389.038,111.629 374.05,105.462 357.587,105.462 H 65.016 c -16.462,0 -31.45,6.167 -42.905,16.254 z"
+   id="path18"
+   inkscape:connector-curvature="0" />
+<g
+   id="g24"
+   transform="translate(0,12)">
+	<rect
+   y="280.38199"
+   style="fill:#9c969e"
+   width="284.44"
+   height="16.254"
+   id="rect20"
+   x="0" />
+	<rect
+   x="365.70999"
+   y="280.38199"
+   style="fill:#9c969e"
+   width="56.889"
+   height="16.254"
+   id="rect22" />
+</g>
+<rect
+   x="300.70001"
+   y="211.112"
+   style="fill:#ffffff"
+   width="48.762001"
+   height="32.507999"
+   id="rect26" />
+<rect
+   x="130.03"
+   y="194.862"
+   style="fill:#9c969e"
+   width="16.254"
+   height="65.019997"
+   id="rect28" />
+<rect
+   x="130.03"
+   y="194.862"
+   style="fill:#867e88"
+   width="16.254"
+   height="16.254"
+   id="rect30" />
+<circle
+   style="fill:#5d5360"
+   cx="211.3"
+   cy="389.90201"
+   r="40.634998"
+   id="circle32" />
+<circle
+   style="fill:#dbd9dc"
+   cx="211.3"
+   cy="389.90201"
+   r="16.254"
+   id="circle34" />
+<g
+   id="g36">
+</g>
+<g
+   id="g38">
+</g>
+<g
+   id="g40">
+</g>
+<g
+   id="g42">
+</g>
+<g
+   id="g44">
+</g>
+<g
+   id="g46">
+</g>
+<g
+   id="g48">
+</g>
+<g
+   id="g50">
+</g>
+<g
+   id="g52">
+</g>
+<g
+   id="g54">
+</g>
+<g
+   id="g56">
+</g>
+<g
+   id="g58">
+</g>
+<g
+   id="g60">
+</g>
+<g
+   id="g62">
+</g>
+<g
+   id="g64">
+</g>
+<g
+   id="Battery"
+   transform="matrix(3.4830002,0,0,3.0749733,-10.931608,234.9319)"><path
+     id="path1001"
+     d="M 40,0 H 24 a 3.0033,3.0033 0 0 0 -3,3 v 6 a 1,1 0 0 0 1,1 H 42 A 1,1 0 0 0 43,9 V 3 A 3.0033,3.0033 0 0 0 40,0 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#5d5360;stroke:#5d5360" /><rect
+     id="rect1003"
+     y="8"
+     x="14"
+     width="36"
+     rx="5"
+     height="56"
+     style="fill:#5d5360" /><path
+     id="path1005"
+     d="M 44.8867,31.5381 A 0.9993,0.9993 0 0 0 44,31 H 35 V 20 a 1,1 0 0 0 -1.8193,-0.5732 l -14,20 A 1,1 0 0 0 20,41 h 9 v 11 a 1,1 0 0 0 1.8193,0.5732 l 14,-20 a 0.9979,0.9979 0 0 0 0.0674,-1.0351 z"
+     inkscape:connector-curvature="0"
+     style="fill:#fedf30" /></g></svg>

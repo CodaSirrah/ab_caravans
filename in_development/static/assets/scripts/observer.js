@@ -2,7 +2,7 @@
 const nav = document.querySelector('nav-container')
 const sectionOne = document.querySelector('.fill')
 const sectionTwo = document.querySelector('#location')
-const sectionThree = document.querySelector('#form-container')
+const sectionThree = document.querySelector('#footer')
 const pseudoNav = document.querySelector('.pseudo-nav ')
 const linkHr = document.querySelector('.link-hr')
 
@@ -17,6 +17,10 @@ const optionsLocation = {
   rootMargin: '-50px 0px -200px 0px',
   threshold: 0.9,
 }
+
+// const optionsFooter - {
+//   r
+// }
 
 // Global Functions
 function translateHr(target, multiplier) {

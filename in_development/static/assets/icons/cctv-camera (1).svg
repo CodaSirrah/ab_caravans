@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Capa_1"
+   enable-background="new 0 0 512 512"
+   height="512"
+   viewBox="0 0 512 512"
+   width="512"
+   version="1.1"
+   sodipodi:docname="cctv-camera (1).svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3368"
+     inkscape:window-height="1376"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="0.56243671"
+     inkscape:cx="-333.17692"
+     inkscape:cy="202.36109"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Capa_1" />
+  <g
+     id="g8"
+     transform="matrix(-0.8,0,0,0.8,460.79982,51.200046)">
+    <path
+       d="m 90,421 v -15 h 82.12 c 6.152,0 11.675,-3.75 13.945,-9.463 l 55.486,-139.636 103.409,18.234 c 8.157,1.437 15.938,-4.01 17.377,-12.167 L 380.569,159.563 55.582,102.257 37.35,205.662 c -1.439,8.157 4.01,15.939 12.167,17.377 L 211.375,251.58 161.939,376 H 90 V 361 C 90,336.186 69.814,316 45,316 H 30 v -15 c 0,-8.291 -6.709,-15 -15,-15 -8.291,0 -15,6.709 -15,15 v 180 c 0,8.291 6.709,15 15,15 8.291,0 15,-6.709 15,-15 v -15 h 15 c 24.814,0 45,-20.186 45,-45 z M 331.044,181.291 c 8.157,1.439 13.607,9.218 12.167,17.377 -1.44,8.159 -9.219,13.607 -17.377,12.167 -8.159,-1.437 -13.607,-9.218 -12.167,-17.377 1.438,-8.159 9.22,-13.604 17.377,-12.167 z"
+       id="path2"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M 499.602,89.162 85.983,16.231 C 77.826,14.792 70.045,20.239 68.606,28.398 l -7.813,44.315 398.846,70.327 c 24.476,4.316 47.816,-12.026 52.13,-36.502 1.44,-8.157 -4.008,-15.937 -12.167,-17.376 z"
+       id="path4"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 394.485,253.404 44.317,7.815 c 8.159,1.437 15.938,-4.01 17.377,-12.167 l 13.024,-73.861 -59.088,-10.419 z"
+       id="path6"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
