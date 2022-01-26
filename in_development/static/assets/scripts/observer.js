@@ -1,26 +1,33 @@
 // Selectors
 const nav = document.querySelector('nav-container')
-const sectionOne = document.querySelector('.fill')
-const sectionTwo = document.querySelector('#location')
-const sectionThree = document.querySelector('#footer')
-const pseudoNav = document.querySelector('.pseudo-nav ')
+const homeSection = document.querySelector('.pseudo-nav')
+const servicesSection = document.querySelector('.fill')
+const locationSection = document.querySelector('.pseudo-location')
+const footerSection = document.querySelector('#footer')
 const linkHr = document.querySelector('.link-hr')
 
 // Global Objects {
 const linkDistance = 110
-const options = {
+
+const optionsHome = {
+  rootMargin: '100px 0px -200px 0px',
+  threshold: 0.9,
+}
+
+const optionsServices = {
   rootMargin: '100px 0px -200px 0px',
   threshold: 0.9,
 }
 
 const optionsLocation = {
-  rootMargin: '-50px 0px -200px 0px',
-  threshold: 0.9,
+  rootMargin: '0px 0px -200px 0px',
+  threshold: 1,
 }
 
-// const optionsFooter - {
-//   r
-// }
+const optionsFooter = {
+  rootMargin: '0px 0px -10px 0px',
+  threshold: 0.2,
+}
 
 // Global Functions
 function translateHr(target, multiplier) {
@@ -30,14 +37,23 @@ function translateHr(target, multiplier) {
 function resetHr(target) {
   target.style = `transform: translateX(0px);`
 }
-const sectionOneObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
+const homeSectionObserver = new IntersectionObserver(function (entries, homeSectionObserver) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      resetHr(linkHr)
+    }
+  })
+}, optionsHome)
+
+const servicesSectionObserver = new IntersectionObserver(function (entries, servicesSectionObserver) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       translateHr(linkHr, 1)
     }
   })
-}, options)
-const sectionTwoObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
+}, optionsServices)
+
+const locationSectionObserver = new IntersectionObserver(function (entries, locationSectionObserver) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       translateHr(linkHr, 2)
@@ -45,24 +61,16 @@ const sectionTwoObserver = new IntersectionObserver(function (entries, sectionOn
   })
 }, optionsLocation)
 
-const sectionThreeObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
+const footerSectionObserver = new IntersectionObserver(function (entries, footerSectionObserver) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       translateHr(linkHr, 3)
     }
   })
-}, options)
-
-const sectionFourObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      resetHr(linkHr)
-    }
-  })
-}, options)
+}, optionsFooter)
 
 // Firing Functions
-sectionOneObserver.observe(sectionOne)
-sectionTwoObserver.observe(sectionTwo)
-sectionThreeObserver.observe(sectionThree)
-sectionFourObserver.observe(pseudoNav)
+homeSectionObserver.observe(homeSection)
+servicesSectionObserver.observe(servicesSection)
+locationSectionObserver.observe(locationSection)
+footerSectionObserver.observe(footerSection)
