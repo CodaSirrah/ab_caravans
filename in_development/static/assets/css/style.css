@@ -33,15 +33,16 @@ html {
 
 /* Start of CSS Variables */
 :root {
-  --nav-bg: hsl(209, 0%, 10%);
+  --nav-bg: hsl(239, 55%, 24%);
   --nav-bg-fade: hsla(118, 49%, 46% 0.6);
-  --link-color: hsl(0, 0%, 100%);
+  --link-color: hsl(0, 0%, 99%);
   --side-color-white: hsl(0, 0%, 100%);
-  --side-color-color: hsl(209, 34%, 45%);
+  --side-color-color: hsl(210, 47%, 69%);
   --contact-btn-color: hsla(0, 0%, 0%, 0.74);
   --contact-btn-shadow: 0px;
-  --highlight-color: hsl(209, 4%, 75%);
+  --highlight-color: hsl(216, 25%, 92%);
   --footer-bg: hsla(0, 0%, 100%, 0.8);
+  --secondary-color: hsl(51, 95%, 84%);
 }
 
 .light-sides {
@@ -205,7 +206,7 @@ nav hr {
   margin-left: 32.5px;
   transition: all 0.4s linear;
   border: none;
-  background-color: var(--side-color-color);
+  background-color: var(--link-color);
 }
 
 nav ul a:hover {
@@ -263,7 +264,7 @@ h1 {
   box-shadow: var(--contact-btn-shadow) 0 0 0 var(--contact-btn-color);
   width: 140px;
   display: inline-block;
-  background-color: hsl(0, 0%, 80%);
+  background-color: hsl(0, 100%, 98%);
   font-size: 18px;
 }
 
@@ -271,7 +272,7 @@ h1 {
   cursor: pointer;
   transform: translateX(6%);
   --contact-btn-shadow: -2px;
-  background-color: rgba(255, 255, 255, 0.986);
+  background-color: var(--side-color-color);
 }
 
 .hero-inner p {
@@ -457,7 +458,7 @@ input {
   align-self: flex-start;
   width: 400px;
   height: 20px;
-  padding: 18px 0px;
+  padding: 18px 5px;
   border: 1px solid rgb(168, 158, 158);
   border-radius: 6px;
 }
@@ -514,7 +515,7 @@ input {
 footer {
   width: 100%;
   height: 200px;
-  background-color: var(--nav-bg);
+  background-color: hsl(0, 0%, 28%);
   position: relative;
   padding: 0px;
 }
