@@ -666,6 +666,10 @@ footer a:hover {
   #services {
     padding: 0px 16px;
   }
+
+  .first-in-side {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 400px) {
