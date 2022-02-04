@@ -235,7 +235,7 @@ nav ul a:hover {
   background-size: cover;
   background-position: center;
   /* /* background-position: center;  */
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .hero-image > div {
