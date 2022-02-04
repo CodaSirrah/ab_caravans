@@ -377,7 +377,7 @@ h4 {
 .image-container {
   height: fit-content;
   width: fit-content;
-  margin: auto;
+  margin: 20px auto 0px auto;
 }
 
 .icons {
@@ -622,6 +622,7 @@ footer a:hover {
 
   .grid-container {
     display: block;
+    padding: 20px 16px;
   }
 
   .col-1 {
@@ -647,6 +648,23 @@ footer a:hover {
 
   .map-container {
     padding: 0px 20px;
+  }
+
+  section {
+    padding: unset;
+  }
+
+  section p {
+    margin-bottom: 0px;
+  }
+
+  .icons {
+    height: 120px;
+    padding: 0px 2px;
+  }
+
+  #services {
+    padding: 0px 16px;
   }
 }
 
